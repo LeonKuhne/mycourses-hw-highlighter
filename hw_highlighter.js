@@ -37,6 +37,9 @@ function inRange(date, nDays) {
     return dayDiff <= nDays && dayDiff >= 0;
 }
 
+
+let counter = 10 // draw this many times
+let delay = 200 // with a delay of this much
 function draw() {
 	let assignments = getAssignments()
 
@@ -49,10 +52,14 @@ function draw() {
 	    	})
         }
     }
+    
+    // draw repeatedly
+    if (counter > 0) {
+        counter--
+        setTimeout(draw, delay)
+    }
 }
 
-setTimeout(()=>{
-    draw()
-    print("page loaded")
-}, 100)
+draw()
+print("page loaded")
 
