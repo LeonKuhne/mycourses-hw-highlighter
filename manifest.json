@@ -1,19 +1,19 @@
 {
   "manifest_version": 2,
-  "name": "Meet Tony",
+  "name": "MyCourses HW Highlighter",
   "version": "1.0",
-  "description": "Quickly fly through websites with predictive navigation.",
+  "description": "Highlight rows of upcomming homework on mycourses.",
   "icons": {
-    "48": "icons/tony-48.png"
+    "48": "icons/icon-48.png"
   },
   "content_scripts": [
     {
       "matches": [
-        "*://*/*"
+        "https://mycourses.rit.edu/*"
       ],
       "js": [
         "lib/jquery.min.js",
-        "meet_tony.js"
+        "hw_highlighter.js"
       ]
     }
   ]
