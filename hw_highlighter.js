@@ -1,6 +1,6 @@
 let font_size = 24
 let DISABLE_PRINT = true
-let DAY_LOOK_AHEAD = 4
+let DAY_LOOK_AHEAD = 7
 
 function print(text) {
 	if (!DISABLE_PRINT) {
